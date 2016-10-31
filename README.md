@@ -6,12 +6,12 @@
 
 # Requirements
 
-1. Node.js
-2. MongoDB
-3. Bower
+* Node.js
+* MongoDB
+* Bower
 
-1. `npm install`
-2. `bower install`
+* `npm install`
+* `bower install`
 
 
 # Instructions
