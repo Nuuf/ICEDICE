@@ -1,0 +1,25 @@
+{
+  "name": "icedice",
+  "description": "online dice throw",
+  "main": "index.js",
+  "authors": [
+    "Nuuf"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "dice",
+    "online"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "three.js": "three#*",
+    "jquery": "^3.1.1"
+  }
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>ICEDICE</title>
+	<script src="./bow/jquery/dist/jquery.min.js"></script>
+	<script src="./bow/three.js/build/three.min.js"></script>
+	<script src="./socket.io/socket.io.js"></script>
+
+	<script src="./js/GlowShader.js"></script>
+	<script src="./js/OBJLoader.js"></script>
+	<script src="./js/Controls.js"></script>
+
+	<script src="./js/varSetup.js"></script>
+	<script src="./js/threeSetup.js"></script>
+	<script src="./js/die.js"></script>
+	<script src="./js/background.js"></script>
+	<script src="./js/socketSetup.js"></script>
+	<script src="./js/guiControl.js"></script>
+	<script src="./js/init.js"></script>
+
+
+
+	<link rel="stylesheet" href="./css/reset.css" type="text/css">
+	<link rel="stylesheet" href="./css/stylesheet.css" type="text/css">
+</head>
+
+<body>
+	<div id="init_cover">
+		<div class="auto_box center">
+			<ul>
+				<li class="tcent"> Player Setup </li>
+				<li> What is your name? <input id="init_name" type="text" value="Berit"> </li>
+				<li> What is your color? <input id="init_color" type="color" value="#FFFFFF"> </li>
+				<li> <input id="join" type="button" value="JOIN" class="stretch"> </li>
+			</ul>
+		</div>
+	</div>
+	<div id="gui" hidden>
+		<div id="gui_container">
+			<div class="gui_cont_box">
+				<h2 class="bigger"> Highlight </h2>
+				<ul id="hboxes">
+					<li> 1<input type="checkbox" id="hone"></li>
+					<li> 2<input type="checkbox" id="htwo"></li>
+					<li> 3<input type="checkbox" id="hthr"></li>
+					<li> 4<input type="checkbox" id="hfou"></li>
+					<li> 5<input type="checkbox" id="hfiv" checked></li>
+					<li> 6<input type="checkbox" id="hsix" checked></li>
+					<li> <input id="reset_highlight" type="button" value="Reset"></li>
+				</ul>
+			</div>
+			<div class="gui_cont_box">
+				<h2 class="bigger">Camera</h2>
+				<input id="reset_camera" type="button" value="Reset Camera">
+			</div>
+			<div class="gui_cont_box">
+				<h2 class="bigger">Players</h2>
+				<ul id="pnames">
+
+				</ul>
+			</div>
+		</div>
+		<div class="auto_box center_hor" style="top: 80%; z-index: 1;">
+			<span style="color: #FFF;">DICE</span> <input id="dice" type="number" value="2">
+			<input id="fullroll" type="button" value="Roll">
+			<input id="roll" type="button" value="Alt Roll">
+		</div>
+		<div class="auto_box center_hor" style="top: 10%; z-index: 1;">
+			<h2 class="bigger" id="head_display" style="color: #FFF;"></h2>
+		</div>
+	</div>
+</body>
+
+</html>
