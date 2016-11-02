@@ -1,21 +1,20 @@
-### ICEDICE
+# ICEDICE
 
 ## An online dice rolling application
 
 ## Install
 
-# Requirements
+### Requirements
 
-* Node.js
-* MongoDB
-* Bower
+* Node.js, MongoDB, Bower
 
 * `npm install`
 * `bower install`
 
 
-# Instructions
+### Instructions
 
 1. Start MongoDB `mongod`
 2. Start ICEDICE server `node index.js | node index.js nolog`
+3. =pen localhost:port `localhost:8000`
 
